@@ -8,7 +8,7 @@ import router from './routes/reservationRoute.js'
 const app = express();
 dotenv.config();
 app.use(cors({
-    origin:[process.env.FRONTEND_URL],
+    origin:true,
     methods:["POST"],
     credentials:true
 }))
